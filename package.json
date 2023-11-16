@@ -12,6 +12,7 @@
     "redirects:disable": "shx rm -f public/_redirects"
   },
   "dependencies": {
+    "@netlify/blobs": "^6.2.0",
     "@netlify/functions": "^2.0.0",
     "@netlify/remix-adapter": "^2.0.0",
     "@remix-run/react": "^2.2.0",
