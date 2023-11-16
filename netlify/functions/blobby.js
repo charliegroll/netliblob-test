@@ -13,5 +13,7 @@ export default async (req, context) => {
     }
   );
 
+  await things.set("nested/thing/here", "This be nested thing");
+
   return new Response("Blobby blobs set for things and more stores");
 };
