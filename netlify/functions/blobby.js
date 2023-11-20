@@ -16,6 +16,7 @@ export default async (req, context) => {
   await things.set("nested/thing/here", "This be nested thing");
   await things.set("nested/thing/there", "Arrrr here another nested thing");
   await things.set("nested/thing/everywhere", "MULTI BALL");
+  await things.set("more-nests/dir", "hur");
 
   return new Response("Blobby blobs set for things and more stores");
 };
