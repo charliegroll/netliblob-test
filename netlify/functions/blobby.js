@@ -18,5 +18,9 @@ export default async (req, context) => {
   await things.set("nested/thing/everywhere", "MULTI BALL");
   await things.set("more-nests/dir", "hur");
 
+  const empty = getStore("empty");
+  await empty.set("emptiness", "This is not empty");
+  await empty.delete("emptiness");
+
   return new Response("Blobby blobs set for things and more stores");
 };
