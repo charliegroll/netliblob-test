@@ -22,11 +22,5 @@ export default async (req, context) => {
   await empty.set("emptiness", "This is not empty");
   await empty.delete("emptiness");
 
-  await things.delete("nested/thing/here");
-  await things.delete("nested/thing/there");
-  await things.delete("nested/thing/everywhere");
-  await things.delete("more-nests/dir");
-  await things.delete("stuff");
-
   return new Response("Blobby blobs set for things and more stores");
 };
