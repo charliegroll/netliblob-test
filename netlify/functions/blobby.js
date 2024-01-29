@@ -22,5 +22,8 @@ export default async (req, context) => {
   await empty.set("emptiness", "This is not empty");
   await empty.delete("emptiness");
 
+  const long = getStore("really-long-name-for-a-store");
+  await long.set("long", "This is long");
+
   return new Response("Blobby blobs set for things and more stores");
 };
