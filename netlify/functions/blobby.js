@@ -23,7 +23,7 @@ export default async (req, context) => {
   await empty.delete("emptiness");
 
   const long = getStore(
-    "really-long-name-for-a-store-really-long-name-for-a-store-really-long-name-for-a-store"
+    "really-long-name-for-a-store-really-long-name-for-a-store-real"
   );
   await long.set("long", "This is long");
 
